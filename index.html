@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doomaine Moktara Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom animations to replace Framer Motion */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-stone-50 text-stone-900 font-sans selection:bg-orange-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-stone-50/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-orange-900 tracking-tight">
+                Doomaine Moktara
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-orange-700 transition-colors">About</a>
+                <a href="#founder" class="hover:text-orange-700 transition-colors">Founder</a>
+                <a href="#contact" class="hover:text-orange-700 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-orange-900 text-stone-50 px-5 py-2 rounded-full text-sm font-medium hover:bg-orange-800 transition-colors">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-3xl animate-fade-up">
+                <div class="inline-flex items-center space-x-2 bg-orange-100 text-orange-900 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    <span>Consulting Agency</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif font-medium leading-tight text-stone-900 mb-6">
+                    Discover Morocco's Most <span class="text-orange-700 italic">Promising</span> Projects.
+                </h1>
+                <p class="text-lg md:text-xl text-stone-600 mb-10 max-w-2xl leading-relaxed">
+                    Doomaine Moktara is your premier consulting partner for navigating and investing in the vibrant, emerging markets of Morocco. We bridge vision with opportunity.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="inline-flex justify-center items-center space-x-2 bg-orange-900 text-stone-50 px-8 py-4 rounded-full text-base font-medium hover:bg-orange-800 transition-colors">
+                        <span>Contact Us</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-orange-100/50 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-amber-100/50 rounded-full blur-3xl -z-10"></div>
+    </section>
+
+        <!-- Founder Section -->
+    <section id="founder" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-stone-200/50">
+                        <img 
+                            src="./salim.jpg" 
+                            alt="Salim Lyazidi - Founder" 
+                            class="w-full h-full object-cover"
+                            referrerpolicy="no-referrer"
+                        />
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-stone-50 p-6 rounded-2xl shadow-xl border border-stone-100 hidden md:block">
+                        <p class="text-sm font-bold text-stone-900 uppercase tracking-widest mb-1">Visionary</p>
+                        <p class="text-orange-700 font-serif italic">Leading the future</p>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-flex items-center space-x-2 bg-stone-100 text-stone-600 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>Leadership</span>
+                    </div>
+                    <h2 class="text-4xl font-serif font-medium text-stone-900 mb-2">Salim Lyazidi</h2>
+                    <h3 class="text-xl text-orange-700 font-medium mb-6">Founder & Managing Director</h3>
+                    <p class="text-stone-600 text-lg leading-relaxed mb-6">
+Salim Lyazidi is an entrepreneur and former investment executive with experience at global financial institutions including Citigroup, UBS, and Bank of America. With a background spanning finance, sports management, and real estate, he brings a strategic and disciplined approach to leadership inspired by decades of martial arts practice.
+
+                    <p class="text-stone-600 text-lg leading-relaxed mb-8">
+Salim Lyazidi founded Domaine Moktara Consultancy to leverage his international investment experience to support strategic projects, connect investors with high-potential opportunities, and contribute to sustainable economic development in Morocco and beyond.                    </p>
+                    </p>
+                    <a href="https://www.linkedin.com/in/sallyazidi/" class="inline-flex items-center space-x-2 text-stone-900 font-medium hover:text-orange-700 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-stone-900 text-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-serif font-medium mb-6">Why Doomaine Moktara?</h2>
+                    <p class="text-stone-400 text-lg leading-relaxed mb-8">
+                        With deep local roots and a global perspective, we provide unparalleled access to Morocco's most promising ventures. Our consulting approach is built on rigorous analysis, cultural fluency, and a commitment to long-term value creation.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80&w=1000" 
+                            alt="Moroccan Architecture" 
+                            class="w-full h-full object-cover opacity-80"
+                            referrerpolicy="no-referrer"
+                        />
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 bg-orange-900 p-8 rounded-3xl max-w-xs hidden md:block">
+                        <p class="text-lg font-serif italic text-orange-100">"Unlocking the gateway to Africa's most dynamic economy."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-white rounded-3xl shadow-xl shadow-stone-200/50 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-12 lg:p-16 bg-orange-900 text-stone-50">
+                        <h2 class="text-4xl font-serif font-medium mb-4">Start the Conversation</h2>
+                        <p class="text-orange-200 mb-12 text-lg">Ready to explore promising projects in Morocco? Reach out to our team of experts today.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start space-x-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Location</h4>
+                                    <p class="text-orange-200">Rabat, Morocco 10000</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Email</h4>
+                                    <p class="text-orange-200">domainemoktara@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Phone</h4>
+                                    <p class="text-orange-200">+212 762345847 <br/> +212 694476693</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-12 lg:p-16">
+                        <form class="space-y-6" onsubmit="event.preventDefault();">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-orange-900 focus:border-orange-900 outline-none transition-all" placeholder="John" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-orange-900 focus:border-orange-900 outline-none transition-all" placeholder="Doe" />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-orange-900 focus:border-orange-900 outline-none transition-all" placeholder="john@example.com" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-orange-900 focus:border-orange-900 outline-none transition-all resize-none" placeholder="Tell us about your investment goals..."></textarea>
+                            </div>
+                            <button class="w-full bg-orange-900 text-white font-medium py-4 rounded-xl hover:bg-orange-800 transition-colors flex items-center justify-center space-x-2">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-stone-50 tracking-tight mb-4 md:mb-0">
+                Doomaine Moktara
+            </div>
+            <!-- <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-stone-50 transition-colors">LinkedIn</a>
+            </div> -->
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-8 text-sm text-center md:text-left">
+            &copy; <script>document.write(new Date().getFullYear())</script> Doomaine Moktara Consulting. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
+
